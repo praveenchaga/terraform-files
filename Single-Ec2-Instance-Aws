@@ -1,0 +1,11 @@
+provider "aws" {
+  access_key = "Past accesskey"
+  secret_key = "past secret key"
+  region     = "us-east-1"
+}
+resource "aws_instance" "Test01" {
+  ami                  = "ami-0b69ea66ff7391e80"
+  instance_type        = "t2.micro"
+  key_name             = "Mylnux1"
+  iam_instance_profile = "Runcommand"
+}
